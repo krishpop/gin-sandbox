@@ -1,0 +1,12 @@
+import utils
+import runner
+
+#printer = @p1/utils.gin_print()
+#p1/utils.gin_print.arg = 'test1'
+#runner.run.run_fn = %printer
+#printer2 = @p2/utils.gin_print()
+#p2/utils.gin_print.arg = 'test2'
+#runner.run.run_fn2 = %printer2
+
+runner.run.run_fn = @utils.TestClass
+utils.TestClass.arg = False
